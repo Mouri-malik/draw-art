@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<div style="text-align:center">
+</div>
+
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<div style="text-align:center">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a routerLink="" class="nav-link">Accueil<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a routerLink="profil" class="nav-link">Profil<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="search" class="nav-link">Rechercher</a>
+          </li>
+          <li class="nav-item">
+              <a routerLink="message" class="nav-link">Message</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+    <h1>
+       Welcome to {{ title }}!
+    </h1>
+
+    <!--<button class="btn btn-success" [disabled]="!isAuth">Ouvrir</button> <!Ce boutton sera désactiver si la variable isAuth est fausse-->
+
+<div class="container-fluid">
+
+<router-outlet></router-outlet>

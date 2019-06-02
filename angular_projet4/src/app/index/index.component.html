@@ -1,0 +1,26 @@
+<app-index-header-component></app-index-header-component>
+<div class="row">
+    <div class="col-sm-6 col-sm-offset-2">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+            <div class="form-group">
+                    <label for="name">
+                       Nom
+                  </label>
+                    <input type="text" id="name" name="nom" class="form-control" ngModel>
+             </div>
+        <div class="form-group">
+          <label for="name">
+            Adresse mail
+        </label>
+          <input type="email" id="name" name="mail" class="form-control" ngModel>
+        </div>
+        <div class="form-group">
+            <label for="name">
+              Mot de passe
+          </label>
+            <input type="password" id="name" name="mdp" class="form-control" ngModel>
+          </div>
+        <button class="btn btn-primary" type="submit">Se connecter </button>
+      </form>
+    </div>
+  </div>
